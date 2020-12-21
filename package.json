@@ -1,0 +1,14 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "Mern Shopping App",
+  "main": "server.js",
+  "author": "Athar Mahboob",
+  "license": "MIT",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
