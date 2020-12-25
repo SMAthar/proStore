@@ -24,5 +24,9 @@ export const removeFromCart = (id) => (dispatch, getState) => {
     type: CART_REMOVE_ITEM,
     payload: id,
   });
-  localStorage.setItem('cartItems', JSON.stringify(getState().cartItems));
+  if (getState().cart.cartItems.length !== 0) {
+    localStorage.setItem('cartItems', JSON.stringify(getState().cartItems));
+  } else {
+    localStorage.removeItem('cartItems');
+  }
 };
